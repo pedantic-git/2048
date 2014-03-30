@@ -40,7 +40,7 @@ body {
 }
 
 h1.title {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: bold;
   margin: 0;
   display: block;
@@ -205,15 +205,23 @@ hr {
       z-index: 100;
 
       text-align: center;
+      color: #000000;
 
-      p {
+      p.title {
         font-size: 60px;
         font-weight: bold;
         height: 60px;
         line-height: 60px;
-        margin-top: 222px;
+        margin-top: 162px;
         // height: $field-width;
         // line-height: $field-width;
+      }
+
+      p.extra {
+        font-size: 30px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 30px;
       }
 
       .lower {
@@ -541,15 +549,41 @@ hr {
   }
 
   .game-message {
-    p {
+    p.title {
       font-size: 30px !important;
       height: 30px !important;
       line-height: 30px !important;
-      margin-top: 90px !important;
+      margin-top: 42px !important;
+    }
+
+    p.extra {
+      font-size: 18px !important;
+      height: 18px !important;
+      line-height: 18px !important;
+      margin-top: 30px !important;
     }
 
     .lower {
       margin-top: 30px !important;
     }
   }
+}
+
+.hate-items {
+
+  dt {
+    img {
+      float: left;
+      margin-right: 10px;
+    }
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  dd {
+    margin-left: 0px;
+    font-size: 14px !important;
+  }
+
 }

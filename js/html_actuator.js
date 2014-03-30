@@ -126,10 +126,12 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "You win!" : "Game over!";
+  var message = won ? "UKIP wins!" : "You lose!";
+  var extra   = won ? "Enjoy your truly British nation. As long as you're truly British." : "And just like voting UKIP, there's no 'undo' button.";
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
+  this.messageContainer.getElementsByTagName("p")[1].textContent = extra;
 };
 
 HTMLActuator.prototype.clearMessage = function () {

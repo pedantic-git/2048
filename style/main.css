@@ -16,7 +16,7 @@ body {
   clear: both; }
 
 h1.title {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: bold;
   margin: 0;
   display: block;
@@ -172,18 +172,24 @@ hr {
     background: rgba(238, 228, 218, 0.5);
     z-index: 100;
     text-align: center;
+    color: #000000;
     -webkit-animation: fade-in 800ms ease 1200ms;
     -moz-animation: fade-in 800ms ease 1200ms;
     animation: fade-in 800ms ease 1200ms;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     animation-fill-mode: both; }
-    .game-container .game-message p {
+    .game-container .game-message p.title {
       font-size: 60px;
       font-weight: bold;
       height: 60px;
       line-height: 60px;
-      margin-top: 222px; }
+      margin-top: 162px; }
+    .game-container .game-message p.extra {
+      font-size: 30px;
+      height: 30px;
+      line-height: 30px;
+      margin-top: 30px; }
     .game-container .game-message .lower {
       display: block;
       margin-top: 59px; }
@@ -591,18 +597,24 @@ hr {
       background: rgba(238, 228, 218, 0.5);
       z-index: 100;
       text-align: center;
+      color: #000000;
       -webkit-animation: fade-in 800ms ease 1200ms;
       -moz-animation: fade-in 800ms ease 1200ms;
       animation: fade-in 800ms ease 1200ms;
       -webkit-animation-fill-mode: both;
       -moz-animation-fill-mode: both;
       animation-fill-mode: both; }
-      .game-container .game-message p {
+      .game-container .game-message p.title {
         font-size: 60px;
         font-weight: bold;
         height: 60px;
         line-height: 60px;
-        margin-top: 222px; }
+        margin-top: 162px; }
+      .game-container .game-message p.extra {
+        font-size: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 30px; }
       .game-container .game-message .lower {
         display: block;
         margin-top: 59px; }
@@ -725,10 +737,25 @@ hr {
   .tile .tile-inner {
     font-size: 35px; }
 
-  .game-message p {
+  .game-message p.title {
     font-size: 30px !important;
     height: 30px !important;
     line-height: 30px !important;
-    margin-top: 90px !important; }
+    margin-top: 42px !important; }
+  .game-message p.extra {
+    font-size: 18px !important;
+    height: 18px !important;
+    line-height: 18px !important;
+    margin-top: 30px !important; }
   .game-message .lower {
     margin-top: 30px !important; } }
+.hate-items dt {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 0px; }
+  .hate-items dt img {
+    float: left;
+    margin-right: 10px; }
+.hate-items dd {
+  margin-left: 0px;
+  font-size: 14px !important; }
