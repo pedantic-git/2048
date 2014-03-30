@@ -133,10 +133,28 @@ HTMLActuator.prototype.message = function (won) {
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
   this.messageContainer.getElementsByTagName("p")[1].textContent = extra;
+
+  this.clearContainer(this.sharingContainer);
+  this.sharingContainer.appendChild(this.scoreTweetButton());
+  twttr.widgets.load();
 };
 
 HTMLActuator.prototype.clearMessage = function () {
   // IE only takes one value to remove at a time.
   this.messageContainer.classList.remove("game-won");
   this.messageContainer.classList.remove("game-over");
+};
+
+HTMLActuator.prototype.scoreTweetButton = function () {
+  var tweet = document.createElement("a");
+  tweet.classList.add("twitter-share-button");
+  tweet.setAttribute("href", "https://twitter.com/share");
+  tweet.setAttribute("data-via", "pedantic_git");
+  tweet.setAttribute("data-url", "http://pedantic-git.github.io/204Hate/");
+  tweet.textContent = "Tweet";
+
+  var text = "I scored " + this.score + " points destroying un-British things in #204Hate! #UKIP";
+  tweet.setAttribute("data-text", text);
+
+  return tweet;
 };

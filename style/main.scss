@@ -239,6 +239,12 @@ hr {
 	}
       }
 
+      .score-sharing {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+      }
+
       @include animation(fade-in 800ms ease $transition-speed * 12);
       @include animation-fill-mode(both);
 
