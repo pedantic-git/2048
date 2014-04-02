@@ -151,6 +151,7 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   tweet.setAttribute("href", "https://twitter.com/share");
   tweet.setAttribute("data-via", "pedantic_git");
   tweet.setAttribute("data-url", "http://pedantic-git.github.io/204Hate/");
+  tweet.setAttribute("data-counturl", "http://pedantic-git.github.io/204Hate/");
   tweet.textContent = "Tweet";
 
   var text = "I scored " + this.score + " points destroying un-British things in #204Hate! #UKIP";

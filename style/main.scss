@@ -233,10 +233,6 @@ hr {
         @include button;
         margin-left: 9px;
         // margin-top: 59px;
-
-	&.keep-playing-button {
-	  display: none;
-	}
       }
 
       .score-sharing {
@@ -251,10 +247,6 @@ hr {
       &.game-won {
         background: rgba($tile-gold-color, .5);
         color: $bright-text-color;
-
-	a.keep-playing-button {
-	  display: inline-block;
-	}
       }
 
       &.game-won, &.game-over {

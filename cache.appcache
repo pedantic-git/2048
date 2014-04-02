@@ -23,6 +23,29 @@ style/fonts/ClearSans-Regular-webfont.eot
 style/fonts/ClearSans-Regular-webfont.svg
 style/fonts/ClearSans-Regular-webfont.woff
 
+# Images
+img/512.png
+img/512-small.png
+img/2.png
+img/1024.png
+img/1024-small.png
+img/16-small.png
+img/2-small.png
+img/256-small.png
+img/4.png
+img/16.png
+img/32.png
+img/64.png
+img/8.png
+img/128.png
+img/64-small.png
+img/256.png
+img/8-small.png
+img/32-small.png
+img/4-small.png
+img/128-small.png
+img/2048.png
+
 # Other resources
 meta/apple-touch-icon.png
 meta/icon_bitcoin.svg
